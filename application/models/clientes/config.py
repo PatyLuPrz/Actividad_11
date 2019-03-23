@@ -1,9 +1,10 @@
 import web
 
-db_host = 'localhost'
-db_name = 'ferreteria_mppm'
-db_user = 'mppm'
-db_pw = 'mppm.2019'
+db_host = 'p2d0untihotgr5f6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'
+db_name = 'g2z2juujote6igt4'
+db_user = 'vvwzh7jjr77jalh0'
+db_pw = 'qghhleom6r0hre1g'
+
 
 db = web.database(
     dbn='mysql',
