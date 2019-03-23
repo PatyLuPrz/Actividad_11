@@ -28,7 +28,7 @@ class Api_clientes:
             web.header('Content-Type', 'application/json')
             return json.dumps(clientes_json)
 
-    # http://0.0.0.0:8080/api_clientes?user_hash=12345&action=put&nombre=Gabriela&apellido_paterno=Curiel&apellido_materno=Garcia&telefono=7751245625&email=gabi@gmail.com
+    # http://0.0.0.0:8080/api_clientes?user_hash=12345&action=put&nombre=Patricia&apellido_paterno=Perez&apellido_materno=Martinez&telefono=7751245625&email=patricia@gmail.com
     def put(self, nombre,apellido_paterno,apellido_materno,telefono,email):
         try:
             config.model.insert_clientes(nombre,apellido_paterno,apellido_materno,telefono,email)
@@ -51,7 +51,7 @@ class Api_clientes:
             return None
 
 # http://0.0.0.0:8080/api_clientes?user_hash=12345&action=update&id_cliente=1&product=nuevo&description=nueva&stock=10&purchase_price=1&price_sale=3&product_image=default.jpg
-# localhost:8080//api_clientes?user_hash=12345&action=update&id_cliente=9&nombre=Gabriela&apellido_paterno=Curiel&apellido_materno=Garcia&telefono=7751245625&email=gabi@gmail.com
+# localhost:8080//api_clientes?user_hash=12345&action=update&id_cliente=1&nombre=Adolfo&apellido_paterno=Leon&apellido_materno=Barron&telefono=7751329391&email=adolfo_leba@hotmail.com
     def update(self, id_cliente, nombre,apellido_paterno,apellido_materno,telefono,email):
         try:
             config.model.edit_clientes(id_cliente,nombre,apellido_paterno,apellido_materno,telefono,email)
